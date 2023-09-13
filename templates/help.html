@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/help-style.css') }}">
+
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/help">Help</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Help and Instructions</h1>
+        <p><em>This data is for Belgium</em></p>
+        <p>Here's how to fill out the form:</p>
+        <ul>
+            <li>Dew Point (°C): (-6 to 16)</li>
+            <li>Visibility (km): (1 to 66)</li>
+            <li>Pressure mm Hg: (729 to 773)</li>
+            <li>Windspeed (m/s): (0 to 14)</li>
+        </ul>
+        <p>To get accurate data, you can check the following links:</p>
+        <ul>
+            <li><a href="https://www.accuweather.com/en/be/chievres/28202/current-weather/28202" target="_blank">Weather Chievres</a></li>
+        </ul>
+    </div>
+</body>
+</html>

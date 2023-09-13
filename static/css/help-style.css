@@ -1,0 +1,67 @@
+/* help-style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+.nav-list {
+    /* ... your existing styles ... */
+    width: 200px; /* Adjust the width as needed */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: width 0.3s ease; /* Add transition for smooth width change */
+    left: -50; /* Position at the left of the screen */
+    top: 50%; /* Center the menu vertically */
+    transform: translateY(-50%); /* Adjust to vertically center */
+    background-color: #333;
+}
+
+.nav-list li a {
+    display: block;
+    color: white;
+    padding: 16px 24px; /* Increase padding for better spacing */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for smooth hover */
+}
+
+.nav-list li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.nav-list li a:hover:not(.active) {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Add button for toggling the side menu */
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 24px;
+}

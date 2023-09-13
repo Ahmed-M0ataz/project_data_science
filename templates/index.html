@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>power consumption</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+       
+    </head>
+
+    <body>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Machine Learning Prediction</h1>
+            <form id="prediction-form" action="/predict" method="post">
+                
+                <label for="date">Date:</label>
+                <input type="datetime-local" id="date" name="date" required>
+                
+                                
+                <label for="T6">Temperature outside the building, in Celsius (-6 to 29):</label>
+                <input type="number" id="T6" name="T6" min="-6" max="29" required>
+
+                <label for="RH_6">Humidity outside the building, in % (1-99):</label>
+                <input type="number" id="RH_6" name="RH_6" min="1" max="99" required>
+                
+                <label for="lights">energy use of light fixtures in the house in Wh: (0-70)</label>
+                <input type="number" id="lights" name="lights" min="0" max="70" required>
+                
+                <label for="dew point">dew point DEGREE CELSIUS (Â C): (-6 to 16)</label>
+                <input type="number" id="Tdewpoint" name="Tdewpoint" min="-6" max="16" required>
+                
+                <label for="Visibility">Visibility visibility in km: (1-66):</label>
+                <input type="number" id="Visibility" name="Visibility" min="1" max="66" required>
+                
+                <label for="Press_mm_hg">Pressure mm Hg: (729-773):</label>
+                <input type="number" id="Press_mm_hg" name="Press_mm_hg" min="729" max="773" required>
+                
+                <label for="Windspeed">Windspeed in m/s (0-14):</label>
+                <input type="number" id="Windspeed" name="Windspeed" min="0" max="14" required>
+                
+                <button type="submit">Predict</button>
+            </form>
+            <p id="prediction-result"></p>
+
+        </div>
+        
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    </body>
+</html>
