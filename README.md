@@ -76,3 +76,6 @@ This data science project successfully analyzed and predicted house power consum
 ## Acknowledgments
 
 We would like to acknowledge the source of the dataset and any external libraries or resources used during the project.
+
+
+[Watch the Project Video](https://drive.google.com/file/d/12PMmGEtWvmKZmXnVGzQvC-MFVMVY5iZ5/view)
