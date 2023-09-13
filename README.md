@@ -68,7 +68,7 @@ The dataset used for this project contains the following columns:
 
 - Hyperparameter tuning was performed to optimize the model's performance.
 - Techniques like Grid Search Cross-Validation were used to find the best hyperparameters.
-
+ss
 ## Conclusion
 
 This data science project successfully analyzed and predicted house power consumption based on various factors. The machine learning model's performance was optimized through hyperparameter tuning, and the project provides valuable insights into energy usage patterns.
